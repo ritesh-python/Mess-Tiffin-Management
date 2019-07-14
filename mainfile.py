@@ -1,0 +1,128 @@
+from tkinter import *
+import tkinter as tk
+from tkinter import ttk
+import os
+prog_call = sys.argv[0]
+prog_location = os.path.split(prog_call)[0]
+class main:
+    def mainsection(self):
+        self.top = Tk()
+        self.top.configure(background="#b8bfd8")
+        self.top.geometry("1284x680+312+238")
+        self.Frame1 = tk.Frame(self.top)
+        self.Frame1.place(relx=0.0, rely=0.0, relheight=0.189, relwidth=1.021)
+        self.Frame1.configure(relief='groove')
+        self.Frame1.configure(borderwidth="2")
+        self.Frame1.configure(relief="groove")
+        self.Frame1.configure(background="#7620d8")
+        self.Frame1.configure(highlightbackground="#4a66ef")
+        self.Frame1.configure(highlightcolor="#630930")
+        self.Frame1.configure(width=1285)
+
+        self.Label2 = tk.Label(self.Frame1)
+        self.Label2.place(relx=0.031, rely=0.08, height=101, width=1217)
+        self.Label2.configure(activebackground="#f9f9f9")
+        self.Label2.configure(activeforeground="black")
+        self.Label2.configure(background="#54d854")
+        self.Label2.configure(disabledforeground="#39a380")
+        self.Label2.configure(font="-family {Wide Latin} -size 22")
+        self.Label2.configure(foreground="#000000")
+        self.Label2.configure(highlightbackground="#d9d9d9")
+        self.Label2.configure(highlightcolor="#416352")
+        self.Label2.configure(text='''Mess and Tifin Service system''')
+
+        self.TFrame1 = ttk.Frame(self.top)
+        self.TFrame1.place(relx=0.04, rely=0.271, relheight=0.626, relwidth=0.29)
+
+        self.TFrame1.configure(relief='groove')
+        self.TFrame1.configure(borderwidth="2")
+        self.TFrame1.configure(relief="groove")
+        self.TFrame1.configure(width=365)
+
+        self.TLabel1 = ttk.Label(self.TFrame1)
+        self.TLabel1.place(relx=-0.959, rely=-0.145, height=684, width=734)
+        self.TLabel1.configure(background="#d9d9d9")
+        self.TLabel1.configure(foreground="#000000")
+        self.TLabel1.configure(font="TkDefaultFont")
+        self.TLabel1.configure(relief="flat")
+        self.TLabel1.configure(text='''Tlabel''')
+        photo_location = os.path.join(prog_location, "a.png")
+        self._img0 = tk.PhotoImage(file=photo_location)
+        self.TLabel1.configure(image=self._img0)
+
+        self.Button1 = tk.Button(self.top)
+        self.Button1.place(relx=0.548, rely=0.377, height=92, width=368)
+        self.Button1.configure(activebackground="#ececec")
+        self.Button1.configure(activeforeground="#000000")
+        self.Button1.configure(background="#d8d83c")
+        self.Button1.configure(command=owners)
+        self.Button1.configure(disabledforeground="#a3a3a3")
+        self.Button1.configure(font="-family {Segoe UI} -size 12 -weight bold")
+        self.Button1.configure(foreground="#000000")
+        self.Button1.configure(highlightbackground="#d9d9d9")
+        self.Button1.configure(highlightcolor="black")
+        self.Button1.configure(pady="0")
+        self.Button1.configure(text='''OWNER SECTION''')
+
+        self.Button2 = tk.Button(self.top)
+        self.Button2.place(relx=0.548, rely=0.618, height=92, width=368)
+        self.Button2.configure(activebackground="#ececec")
+        self.Button2.configure(activeforeground="#000000")
+        self.Button2.configure(background="#d8d459")
+        self.Button2.configure(command=customers)
+        self.Button2.configure(disabledforeground="#a3a3a3")
+        self.Button2.configure(font="-family {Segoe UI} -size 14 -weight bold")
+        self.Button2.configure(foreground="#000000")
+        self.Button2.configure(highlightbackground="#d9d9d9")
+        self.Button2.configure(highlightcolor="black")
+        self.Button2.configure(pady="0")
+        self.Button2.configure(text='''CUSTOMER SECTION''')
+
+        self.Label3 = tk.Label(self.top)
+        self.Label3.place(relx=0.357, rely=0.211, height=51, width=821)
+        self.Label3.configure(activebackground="#f9f9f9")
+        self.Label3.configure(activeforeground="black")
+        self.Label3.configure(background="#d8b60b")
+        self.Label3.configure(disabledforeground="#a3a3a3")
+        self.Label3.configure(font="-family {Segoe Print} -size 13")
+        self.Label3.configure(foreground="#000000")
+        self.Label3.configure(highlightbackground="#d9d9d9")
+        self.Label3.configure(highlightcolor="black")
+        self.Label3.configure(text='''We parcel delicious food''')
+
+        self.Frame2 = tk.Frame(self.top)
+        self.Frame2.place(relx=0.326, rely=0.86, relheight=0.068, relwidth=0.671)
+
+        self.Frame2.configure(relief='groove')
+        self.Frame2.configure(borderwidth="2")
+        self.Frame2.configure(relief="groove")
+        self.Frame2.configure(background="#000000")
+        self.Frame2.configure(highlightbackground="#d9d9d9")
+        self.Frame2.configure(highlightcolor="black")
+        self.Frame2.configure(width=845)
+
+        self.Label4 = tk.Label(self.Frame2)
+        self.Label4.place(relx=0.568, rely=0.222, height=31, width=357)
+        self.Label4.configure(activebackground="#f9f9f9")
+        self.Label4.configure(activeforeground="black")
+        self.Label4.configure(background="#34d3d8")
+        self.Label4.configure(disabledforeground="#a3a3a3")
+        self.Label4.configure(font="-family {Rage Italic} -size 14")
+        self.Label4.configure(foreground="#000000")
+        self.Label4.configure(highlightbackground="#d9d9d9")
+        self.Label4.configure(highlightcolor="black")
+        self.Label4.configure(text='''Ritesh A Nimje''')
+
+        self.top.mainloop()
+
+def owners():
+    import oerwerrwe
+    o=oerwerrwe.own()
+    o.osection()
+def customers():
+    import  Login
+    l=Login.logins()
+    l.custsection()
+    print("customers")
+m=main()
+m.mainsection()
